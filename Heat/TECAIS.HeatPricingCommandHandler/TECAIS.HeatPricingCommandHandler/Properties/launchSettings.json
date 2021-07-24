@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TECAIS.HeatPricingCommandHandler": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

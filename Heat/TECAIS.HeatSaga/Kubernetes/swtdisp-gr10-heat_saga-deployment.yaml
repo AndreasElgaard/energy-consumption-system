@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: swtdisp-ap1-gr10
+  name: swtdisp-grp10-heat-saga
+  labels:
+    app: swtdisp-grp10-heat-saga
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: swtdisp-grp10-heat-saga-pod
+
+  template:
+    metadata:
+      name: swtdisp-grp10-heat-saga-pod
+      labels:
+        app: swtdisp-grp10-heat-saga-pod
+    spec:
+      containers:
+        - name: swtdisp-grp10-heat-saga-container
+          image: mark2830/heat-saga
+          ports:
+            - containerPort: 80 
+            

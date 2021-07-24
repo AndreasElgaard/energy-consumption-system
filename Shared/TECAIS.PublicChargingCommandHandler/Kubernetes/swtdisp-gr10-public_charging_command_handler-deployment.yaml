@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: swtdisp-ap1-gr10
+  name: swtdisp-grp10-public-charging-command-handler
+  labels:
+    app: swtdisp-grp10-public-charging-command-handler
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: public-charging-command-handler-pod
+
+  template:
+    metadata:
+      name: public-charging-command-handler-pod
+      labels:
+        app: public-charging-command-handler-pod
+    spec:
+      containers:
+        - name: swtdisp-grp10-public-charging-command-handler-container
+          image: mark2830/public-charging-command-handler
+          ports:
+            - containerPort: 80 
+            

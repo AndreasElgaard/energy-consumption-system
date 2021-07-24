@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: swtdisp-ap1-gr10
+  name: swtdisp-grp10-heat-pricing-service
+  labels:
+    app: swtdisp-grp10-heat-pricing-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: heat-pricing-service-pod
+  
+  template:
+    metadata:
+      name: heat-pricing-service-pod
+      labels:
+        app: heat-pricing-service-pod
+    spec:
+      containers:
+        - name: swtdisp-grp10-heat-pricing-service-container
+          image: mark2830/swtdisp-grp10-heat-pricing-service
+          ports:
+            - containerPort: 80 

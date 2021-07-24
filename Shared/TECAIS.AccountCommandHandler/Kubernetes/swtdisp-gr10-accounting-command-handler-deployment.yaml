@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: swtdisp-ap1-gr10
+  name: swtdisp-grp10-accounting-command-handler
+  labels:
+    app: swtdisp-grp10-accounting-command-handler
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: accounting-command-handler-pod
+
+  template:
+    metadata:
+      name: accounting-command-handlere-pod
+      labels:
+        app: accounting-command-handler-pod
+    spec:
+      containers:
+        - name: swtdisp-grp10-accounting-command-handler-container
+          image: mark2830/accounting-command-handler
+          ports:
+            - containerPort: 80 
+            

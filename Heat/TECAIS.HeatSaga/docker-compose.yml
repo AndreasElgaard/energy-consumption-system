@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  tecais.heatsaga:
+    container_name: heat_saga
+    image: elgaard1/heat-saga
+    networks:
+      - disp
+    build:
+      context: .
+      dockerfile: TECAIS.HeatSaga/Dockerfile
+    ports:
+      - 3000:80
+      - 44369:80
+    restart: always
+networks:
+  disp:
+    external: 
+      name: disp

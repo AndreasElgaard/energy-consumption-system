@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: swtdisp-ap1-gr10
+  name: swtdisp-grp10-heat-status-submission
+  labels:
+    app: swtdisp-grp10-heat-status-submission
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: heat-status-submission-service-pod
+
+  template:
+    metadata:
+      name: heat-status-submission-service-pod
+      labels:
+        app: heat-status-submission-service-pod
+    spec:
+      containers:
+        - name: swtdisp-grp10-heat-status-submission-container
+          image: mark2830/heat_status_submission_service
+          ports:
+            - containerPort: 80 
+            

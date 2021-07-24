@@ -1,0 +1,19 @@
+version: '3.4'
+services:
+  tecais.watersubmissionservice:
+    container_name: water_submission_service
+    image: elgaard1/water_submission_service
+    build:
+      context: .
+      dockerfile: TECAIS.WaterSubmissionService/Dockerfile
+    ports:
+      - 9000:80
+    restart: always
+
+
+#services:
+#  tecais.watersubmissionservice:
+#    image: ${DOCKER_REGISTRY-}tecaiswatersubmissionservice
+#    build:
+#      context: .
+#      dockerfile: TECAIS.WaterSubmissionService/Dockerfile

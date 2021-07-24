@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: swtdisp-ap1-gr10
+  name: swtdisp-grp10-accounting-service
+  labels:
+    app: swtdisp-grp10-accounting-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: accounting-service-pod
+
+  template:
+    metadata:
+      name: accounting-service-pod
+      labels:
+        app: accounting-service-pod
+    spec:
+      containers:
+        - name: swtdisp-grp10-accounting-service-container
+          image: mark2830/accounting-service
+          ports:
+            - containerPort: 80 
+            

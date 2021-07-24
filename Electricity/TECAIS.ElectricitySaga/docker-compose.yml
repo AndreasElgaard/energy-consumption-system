@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  tecais.electricitysaga:
+    container_name: electricitysaga
+    image: ${DOCKER_REGISTRY-}electricitysaga4
+    networks:
+      - disp
+    build:
+      context: .
+      dockerfile: TECAIS.ElectricitySaga/Dockerfile
+    ports:
+      - 9000:80
+      - 44366:80
+    restart: always
+networks:
+  disp:
+    external: 
+      name: disp

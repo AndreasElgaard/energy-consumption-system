@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TECAIS.IOT.WaterMeteringUnit", "TECAIS.IOS.WaterMeteringUnit\TECAIS.IOT.WaterMeteringUnit.csproj", "{29403E6F-AC15-4E1C-869E-F1C72CD5EA99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29403E6F-AC15-4E1C-869E-F1C72CD5EA99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29403E6F-AC15-4E1C-869E-F1C72CD5EA99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29403E6F-AC15-4E1C-869E-F1C72CD5EA99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29403E6F-AC15-4E1C-869E-F1C72CD5EA99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {487A7FAA-8CBF-4397-8E05-BF3D17DDC0E5}
+	EndGlobalSection
+EndGlobal

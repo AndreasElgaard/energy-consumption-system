@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TECAIS.WaterSaga": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

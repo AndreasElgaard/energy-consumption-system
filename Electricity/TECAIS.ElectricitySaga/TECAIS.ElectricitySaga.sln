@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TECAIS.ElectricitySaga", "TECAIS.ElectricitySaga\TECAIS.ElectricitySaga.csproj", "{4324370B-F91B-4B3F-994A-6B31A5461853}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{AECD5843-17ED-4EC6-A38A-BDF742FBB585}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4324370B-F91B-4B3F-994A-6B31A5461853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4324370B-F91B-4B3F-994A-6B31A5461853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4324370B-F91B-4B3F-994A-6B31A5461853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4324370B-F91B-4B3F-994A-6B31A5461853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AECD5843-17ED-4EC6-A38A-BDF742FBB585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AECD5843-17ED-4EC6-A38A-BDF742FBB585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AECD5843-17ED-4EC6-A38A-BDF742FBB585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECD5843-17ED-4EC6-A38A-BDF742FBB585}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DFF1C5A-F72E-4659-B285-0D325C001ECE}
+	EndGlobalSection
+EndGlobal

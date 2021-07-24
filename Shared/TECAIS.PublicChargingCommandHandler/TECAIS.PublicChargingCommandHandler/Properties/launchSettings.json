@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TECAIS.PublicChargingCommandHandler": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

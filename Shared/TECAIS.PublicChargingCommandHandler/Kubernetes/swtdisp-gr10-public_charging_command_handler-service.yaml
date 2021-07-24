@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: swtdisp-ap1-gr10
+  name: swtdisp-grp10-public-charging-command-handler-service
+  labels:
+    app: swtdisp-grp10-public-charging-command-handler-service
+    
+spec:
+  type: ClusterIP
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  selector:
+    app: public-charging-command-handler-pod

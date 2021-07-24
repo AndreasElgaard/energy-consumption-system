@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TECAIS.ElectricitySaga": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

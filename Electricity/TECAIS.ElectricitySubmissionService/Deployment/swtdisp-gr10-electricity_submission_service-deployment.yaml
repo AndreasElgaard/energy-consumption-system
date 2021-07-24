@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: swtdisp-ap1-gr10
+  name: swtdisp-grp10-electricity-submission
+  labels:
+    app: swtdisp-grp10-electricity-submission
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: electricity-submission-pod
+
+  template:
+    metadata:
+      name: electricity-submission-pod
+      labels:
+        app: electricity-submission-pod
+
+    spec:
+      containers:
+        - name: swtdisp-grp10-electricity-submission
+          image: elgaard1/electricity_submission_service
+          ports:
+            - containerPort: 80 

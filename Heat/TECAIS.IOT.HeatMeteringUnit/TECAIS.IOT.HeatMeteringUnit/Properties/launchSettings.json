@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TECAIS.IOT.HeatMeteringUnit": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

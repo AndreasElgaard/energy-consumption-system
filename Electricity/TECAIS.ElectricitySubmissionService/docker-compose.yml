@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+  tecais.electricitysubmissionservice:
+    container_name: electricity_submission_service
+    image: elgaard1/electricity_submission_service
+    build:
+      context: .
+      dockerfile: TECAIS.ElectricitySubmissionService/Dockerfile
+    ports:
+      - 9000:80
+    restart: always

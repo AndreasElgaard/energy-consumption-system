@@ -1,0 +1,59 @@
+version: '3.4'
+
+services:
+  tecais.heatsubmissionservice:
+    container_name: heat_submission_service
+    image: elgaard1/heat_submission_service
+    networks:
+      - disp
+    build:
+      context: .
+      dockerfile: TECAIS.HeatSubmissionService/Dockerfile
+    ports:
+      - 3000:80
+      - 44369:80
+    restart: always
+networks:
+  disp:
+    external: 
+      name: disp
+
+#version: '3.4'
+#services:
+#  rabbitmq: # login guest:guest
+#    image: rabbitmq:3-management
+#    networks:
+#      - disp
+#    hostname: rabbitmq
+#    container_name: rabbitmq
+#    labels:
+#      NAME: rabbitmq
+#    ports:
+#      - 5672:5672
+#      - 15672:15672
+
+#  tecais.heatsubmissionservice:
+#    container_name: heat_submission_service
+#    image: elgaard1/heat_submission_service
+#    networks:
+#      - disp
+#    build:
+#      context: .
+#      dockerfile: TECAIS.HeatSubmissionService/Dockerfile
+#    ports:
+#      - 5000:443
+#      - 44376:443
+#    restart: always
+#    depends_on:
+#      - rabbitmq
+#    environment: 
+#      - ASPNETCORE_ENVIRONMENT=Development
+#      - ASPNETCORE_URLS=https://+:443;http://+:80
+#      - ASPNETCORE_Kestrel__Certificates__Default__Password=1234
+#      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
+#    volumes:
+#      - ./conf.d/.aspnet/https:/https:ro
+#networks:
+#  disp:
+#    external: 
+#      name: disp

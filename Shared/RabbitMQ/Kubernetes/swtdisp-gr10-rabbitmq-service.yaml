@@ -1,0 +1,19 @@
+kind: Service
+apiVersion: v1
+metadata:
+  namespace: swtdisp-ap1-gr10
+  name: swtdisp-grp10-rabbitmq-client-service
+  labels:
+    app: swtdisp-grp10-rabbitmq
+    type: LoadBalancer
+spec:
+  type: LoadBalancer
+  ports:
+   - name: amqp
+     protocol: TCP
+     port: 5672
+   - name: http
+     protocol: TCP
+     port: 15672
+  selector:
+    app: tecaisrabbitmq-pod

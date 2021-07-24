@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TECAIS.HeatSaga": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

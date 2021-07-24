@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TECAIS.AccountCommandHandler": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

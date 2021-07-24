@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: swtdisp-ap1-gr10
+  name: swtdisp-grp10-public-charging-service
+  labels:
+    app: swtdisp-grp10-public-charging-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: public-charging-service-pod
+
+  template:
+    metadata:
+      name: public-charging-service-pod
+      labels:
+        app: public-charging-service-pod
+    spec:
+      containers:
+        - name: swtdisp-grp10-public-charging-service-container
+          image: mark2830/public-charging-service
+          ports:
+            - containerPort: 80 
+            
